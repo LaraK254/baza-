@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+
+
+.glava {
+    background: #e60023;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.glava a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.vsebina {
+    padding: 20px;
+}
+
+
+.kategorije {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.kategorije a {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+h2 {
+    margin-top: 25px;
+}
+
+
+.menu-table {
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+
+.menu-table tr {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-table td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+
+.img-cell {
+    width: 80px;
+}
+
+.img-cell img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.info-cell h3 {
+    margin: 0;
+}
+
+.info-cell p {
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+
+.cena {
+    width: 80px;
+    font-weight: bold;
+    color: #e60023;
+    text-align: right;
+}

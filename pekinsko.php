@@ -1,0 +1,199 @@
+<?php
+include "povezava.php";
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$uporabnik_id = $_SESSION['user_id'];
+$restavracija_id = 6; 
+?>
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pekinsko mesto</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="glava">
+    <a href="index.php"> Nazaj</a>
+
+    <div style="float:right;">
+        <a href="prikaz_kosarice.php"> Košarica</a>
+    </div>
+	<h1>Pekinško mesto</h1>
+
+</div>
+
+<div class="vsebina">
+
+    <div class="kategorije">
+        <a href="#juhe">Juhe</a>
+        <a href="#piscanec">Piščančje jedi</a>
+        <a href="#govedina">Goveje jedi</a>
+        <a href="#riz">Riž in rezanci</a>
+    </div>
+
+
+    <h2 id="juhe">Juhe</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell"><img src="slike/pjuha.jpg" alt="Kisla juha"></td>
+            <td class="info-cell">
+                <h3>Pekoča kisla juha</h3>
+                <p>Tradicionalna kitajska juha z zelenjavo in začimbami.</p>
+            </td>
+            <td class="cena">3,80 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="img-cell"><img src="slike/juhap.jpg" alt="Piščančja juha"></td>
+            <td class="info-cell">
+                <h3>Piščančja juha</h3>
+                <p>Juha s piščancem in jajčnimi rezanci.</p>
+            </td>
+            <td class="cena">3,50 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h2 id="piscanec">Piščančje jedi</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell"><img src="slike/slpis.jpg" alt="Piščanec sladko-kisli"></td>
+            <td class="info-cell">
+                <h3>Piščanec v sladko-kisli omaki</h3>
+                <p>Ocvrti koščki piščanca s sladko-kislo omako.</p>
+            </td>
+            <td class="cena">9,50 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="img-cell"><img src="slike/ppis.jpg" alt="Pikantni piščanec"></td>
+            <td class="info-cell">
+                <h3>Pikantni piščanec</h3>
+                <p>Piščanec z zelenjavo v rahlo pekoči omaki.</p>
+            </td>
+            <td class="cena">10,00 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h2 id="govedina">Goveje jedi</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell"><img src="slike/govb.jpg" alt="Govedina z bambusom"></td>
+            <td class="info-cell">
+                <h3>Govedina z bambusom</h3>
+                <p>Govedina z bambusovimi poganjki in zelenjavo.</p>
+            </td>
+            <td class="cena">10,50 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="img-cell"><img src="slike/govos.jpg" alt="Govedina v ostrigini omaki"></td>
+            <td class="info-cell">
+                <h3>Govedina v ostrigini omaki</h3>
+                <p>Govedina s kitajsko zelenjavo in ostrigino omako.</p>
+            </td>
+            <td class="cena">11,00 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h2 id="riz">Riž in rezanci</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell"><img src="slike/oriz.jpg" alt="Ocvrti riž"></td>
+            <td class="info-cell">
+                <h3>Ocvrti riž s piščancem</h3>
+                <p>Pražen riž s piščancem in zelenjavo.</p>
+            </td>
+            <td class="cena">8,50 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="img-cell"><img src="slike/rez.jpg" alt="Ocvrti rezanci"></td>
+            <td class="info-cell">
+                <h3>Ocvrti rezanci</h3>
+                <p>Jajčni rezanci z zelenjavo in sojino omako.</p>
+            </td>
+            <td class="cena">8,00 €</td>
+            <td>
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="0">
+                    <input type="hidden" name="restavracija_id" value="6">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

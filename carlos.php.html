@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Carlos Caffe</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="glava">
+    <a href="index.html">← Nazaj</a>
+    <h1>Carlos Caffe</h1>
+    <p>Kavarna z napitki, sladicami in hitrimi prigrizki.</p>
+</div>
+
+<div class="vsebina">
+
+    <div class="kategorije">
+        <a href="#kava">Kava</a>
+        <a href="#topli">Topli napitki</a>
+        <a href="#sladice">Sladice</a>
+        <a href="#prigrizki">Hitri prigrizki</a>
+    </div>
+
+  
+    <h2 id="kava">Kava</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/esp.jpg" alt="Espresso">
+            </td>
+            <td class="info-cell">
+                <h3>Espresso</h3>
+                <p>Klasična italijanska kava</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">2,00 €</td>
+        </tr>
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/cap.jpg" alt="Cappuccino">
+            </td>
+            <td class="info-cell">
+                <h3>Cappuccino</h3>
+                <p>Espresso z mlečno peno</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">2,50 €</td>
+        </tr>
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/bel.jpg" alt="Bela kava">
+            </td>
+            <td class="info-cell">
+                <h3>Bela kava</h3>
+                <p>Kava z dodatkom toplega mleka</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">2,80 €</td>
+        </tr>
+
+    </table>
+
+    <h2 id="topli">Topli napitki</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/coko.jpg" alt="Vroča čokolada">
+            </td>
+            <td class="info-cell">
+                <h3>Vroča čokolada</h3>
+                <p>Kremasta vroča čokolada</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">3,00 €</td>
+        </tr>
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/c.jpg" alt="Čaj">
+            </td>
+            <td class="info-cell">
+                <h3>Čaj</h3>
+                <p>Izbira različnih okusov čaja</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">2,50 €</td>
+        </tr>
+
+    </table>
+
+
+    <h2 id="sladice">Sladice</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/cok.jpg" alt="Čokoladna torta">
+            </td>
+            <td class="info-cell">
+                <h3>Čokoladna torta</h3>
+                <p>Domača čokoladna torta</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">4,00 €</td>
+        </tr>
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/che.jpg" alt="Cheesecake">
+            </td>
+            <td class="info-cell">
+                <h3>Cheesecake</h3>
+                <p>Kremna skutina torta</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">4,50 €</td>
+        </tr>
+
+    </table>
+
+ 
+    <h2 id="prigrizki">Hitri prigrizki</h2>
+
+    <table class="menu-table">
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/toast.jpg" alt="Toast šunka-sir">
+            </td>
+            <td class="info-cell">
+                <h3>Toast šunka-sir</h3>
+                <p>Popečen toast s šunko in sirom</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">4,50 €</td>
+        </tr>
+
+        <tr>
+            <td class="img-cell">
+                <img src="slike/tpisc.jpg" alt="Sendvič s piščancem">
+            </td>
+            <td class="info-cell">
+                <h3>Sendvič s piščancem</h3>
+                <p>Svež sendvič s piščančjim mesom in zelenjavo</p>
+
+                <form action="kosarica.php" method="POST">
+                    <input type="hidden" name="menu_id" value="ID_TUKAJ">
+                    <button type="submit">Dodaj v košarico</button>
+                </form>
+
+            </td>
+            <td class="cena">5,50 €</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
